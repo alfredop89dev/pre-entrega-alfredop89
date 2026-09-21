@@ -28,7 +28,7 @@ export async function getProductById(id){
     }catch(error){
         id >20 ? console.log('El id ingresado no existe en la API') : console.log('Error al obtener el producto de la API:', error);
     } finally{
-        console.log('->Proceso finalizado.');
+        console.log('Proceso finalizado.');
     }
 }
 //agregar un producto
@@ -42,8 +42,6 @@ export async function addProduct(product){
             body: JSON.stringify(product)
         });
         const newProduct = await response.json();
-        console.log('Producto agregado a la API:', newProduct);
-
     }catch(error){
         console.log('Error al agregar el producto a la API:', error);
     } finally{
@@ -57,7 +55,6 @@ export async function deleteProduct(id){
             method: 'DELETE'
         });
         const deletedProduct = await response.json();
-        products = products.filter(product => product.id !== id);
         console.log('Producto eliminado de la API:', deletedProduct);
     }catch(error){
         console.log('Error al eliminar el producto de la API:', error);
