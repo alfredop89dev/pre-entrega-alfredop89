@@ -1,13 +1,12 @@
 {
   "name": "pre-entrega-alfredop89",
   "version": "1.0.0",
-  "description": "Pre-entrega para curso de Bckend + Node.js",
+  "description": "Pre-entrega para curso de Backend + Node.js",
   "license": "MIT",
   "author": "Alfredo A. Perez M.",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   }
 }
