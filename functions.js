@@ -42,6 +42,7 @@ export async function addProduct(product){
             body: JSON.stringify(product)
         });
         const newProduct = await response.json();
+        console.log('Producto agregado a la API:', {newProduct});
     }catch(error){
         console.log('Error al agregar el producto a la API:', error);
     } finally{

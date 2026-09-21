@@ -20,8 +20,7 @@ function callApi() {
         }
     } else if (method === 'POST') {
         if (resource === 'products') {
-            addProduct();
-            console.log('Producto agregado a la API:', { title, price, category });
+            addProduct({ title, price: Number(price), category });
         } else {
             console.log('Instrucción no válida para POST');
         }
