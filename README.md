@@ -8,7 +8,7 @@ Herramienta funcional de línea de comandos (CLI) desarrollada en Node.js para l
 ---
 
 ## Características Principales
-* **Entorno Moderno:** Configurado con **ESModules** (`"type": "module"`) en Node.js.
+* **Entorno:** Configurado con **ESModules** (`"type": "module"`) en Node.js.
 * **Procesamiento Dinámico:** Captura y análisis de argumentos mediante `process.argv`.
 * **Consumo de APIs Asíncronas:** Implementación de `fetch` con manejo de promesas y bloques `async/await` para operaciones HTTP (`GET`, `POST`, `DELETE`).
 
